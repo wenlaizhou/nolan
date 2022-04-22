@@ -6,6 +6,7 @@ type Cluster struct {
 
 // Master 控制节点
 type Master struct {
+	Name string `json:"name"`
 }
 
 // Task 任务
