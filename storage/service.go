@@ -4,8 +4,8 @@ package storage
 type Service interface {
 
 	// Store write
-	Store(cluster Cluster)
+	Store(cluster Cluster) error
 
 	// Read read
-	Read() Cluster
+	Read() (Cluster, error)
 }
