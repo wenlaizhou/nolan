@@ -1,10 +1,11 @@
 package storage
 
-type Cluster struct {
-}
+// Service storage service
+type Service interface {
 
-type Task struct {
-}
+	// Store write
+	Store(cluster Cluster)
 
-type Worker struct {
+	// Read read
+	Read() Cluster
 }
