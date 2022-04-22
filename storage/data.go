@@ -2,6 +2,8 @@ package storage
 
 // Cluster 集群
 type Cluster struct {
+	master  Master
+	workers []Worker
 }
 
 // Master 控制节点
