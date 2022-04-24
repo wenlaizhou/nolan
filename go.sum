@@ -1,0 +1,6 @@
+github.com/go-sql-driver/mysql v1.6.0 h1:BCTh4TKNUYmOmMUcQ3IipzF5prigylS7XXjEkfCHuOE=
+github.com/go-sql-driver/mysql v1.6.0/go.mod h1:DCzpHaOWr8IXmIStZouvnhqoel9Qv2LBy8hT2VhHyBg=
+github.com/wenlaizhou/etree v1.0.1 h1:Wp7OdHwkARJNhNKZBJmGyQLwLLQo38JMvo3NdvQx2cw=
+github.com/wenlaizhou/etree v1.0.1/go.mod h1:yIxBj47HM+rfgffeHw1dbIAcWvH5lWpsqKFMSsnxBkg=
+github.com/wenlaizhou/middleware v0.0.0-20220407113922-3d313f3e668d h1:PuThF18mpkPxuBFGcsseV0CNnHzh8pXOlgaXzBaHUOo=
+github.com/wenlaizhou/middleware v0.0.0-20220407113922-3d313f3e668d/go.mod h1:EMCq14enNkzSKjXO5xglMmya0ApK5rIK2YBA/ZwLeuc=
