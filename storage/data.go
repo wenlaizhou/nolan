@@ -14,6 +14,15 @@ type Master struct {
 	Ip            string
 }
 
+// Worker 工作节点
+type Worker struct {
+	Name          string          `json:"name"`
+	Ip            string          `json:"ip"`
+	TotalTaskSlot int             `json:"totalTaskSlot"`
+	IdleTaskSlot  int             `json:"idleTaskSlot"`
+	Tasks         map[string]Task `json:"tasks"`
+}
+
 // Task 任务
 type Task struct {
 	Slot          int          `json:"slot"`
@@ -27,13 +36,4 @@ type TaskStatus struct {
 	Log        []string `json:"log"`
 	CreateTime int      `json:"createTime"`
 	Statue     string   `json:"statue"`
-}
-
-// Worker 工作节点
-type Worker struct {
-	Name          string          `json:"name"`
-	Ip            string          `json:"ip"`
-	TotalTaskSlot int             `json:"totalTaskSlot"`
-	IdleTaskSlot  int             `json:"idleTaskSlot"`
-	Tasks         map[string]Task `json:"tasks"`
 }
