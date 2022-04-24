@@ -2,9 +2,8 @@ package storage
 
 // Cluster 集群
 type Cluster struct {
-	Master    Master   `json:"master"`
-	Candidate []Master `json:"candidate"`
-	Workers   []Worker `json:"workers"`
+	Master  Master   `json:"master"`
+	Workers []Worker `json:"workers"`
 }
 
 // Master 控制节点
