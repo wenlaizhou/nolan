@@ -1,12 +1,21 @@
 package server
 
-import "github.com/wenlaizhou/middleware"
+import (
+	"github.com/wenlaizhou/middleware"
+)
+
+var Swagger = middleware.SwaggerBuildModel("", "", "")
 
 func Boot() {
 
 	conf := middleware.LoadConfig("app.properties")
 
-	middleware.RegisterHandler("", func(context middleware.Context) {
+	Swagger.AddPath(middleware.SwaggerBuildPath("", "", "", ""))
+	middleware.RegisterHandler("/clusterMap", func(context middleware.Context) {
+		if !checkAuth(conf, context.GetHeader("Authorization")) {
+			context.Error(404, "")
+			return
+		}
 
 	})
 
